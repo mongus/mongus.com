@@ -1,0 +1,14 @@
+.page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #171717;
+    color: #fff;
+}
+
+.title {
+    color: #000;
+    text-shadow: 0 0 4vw #f00;
+    font-size: 8vw;
+}
