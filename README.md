@@ -1,7 +1,6 @@
-# gatsby-starter-default
-The default Gatsby starter
+# Mongus.com
+This is the Gatsby project used to generate the mongus.com static website.
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
 ```
-gatsby new gatsby-example-site
+gatsby build
 ```
