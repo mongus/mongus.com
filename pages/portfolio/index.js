@@ -16,11 +16,12 @@ export default props => (
         <Slider slides={slides} route={props.route}>
             <div className={styles.content}>
                 <p>
-                    My goal is to help you define your next web or mobile app project. I will meet with you
+                    Let me help you define your next web or mobile app project. I will meet with you
                     in person to determine your direction and provide sound technical recommendations. I can
                     also provide development services if you're interested but your initial direction is more
-                    important than implementation details. I've advised too many clients who have wasted
-                    fortunes on app development that didn't fit their needs.
+                    important than implementation details. I know many people who have trusted a development
+                    company to do everything for them and spent a fortune on development that didn't fit their
+                    needs. Don't let that happen to you!
                 </p>
                 <p>
                     I'm very passionate about the latest advances in web technologies. As a result my

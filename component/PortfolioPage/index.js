@@ -22,7 +22,7 @@ const Footer = props => (
 );
 
 export default props => (
-    <div className={styles.resume}>
+    <div className={styles.portfolio}>
         <Header/>
         <div className={styles.content}>
                 {props.children}

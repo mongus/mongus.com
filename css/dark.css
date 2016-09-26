@@ -10,5 +10,6 @@ body {
 }
 
 .arrow {
-    fill: #355c63;
+    opacity: .35;
+    fill: #8ef;
 }

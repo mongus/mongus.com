@@ -2,8 +2,13 @@
     font-weight: bold;
 }
 
-.title {
-    padding: .5rem;
+.title .name {
+    padding: 0 .5em;
+    font-size: 8vw;
+}
+
+.title .company {
+    padding: 0 .5em;
     font-size: 6vw;
 }
 
@@ -12,33 +17,25 @@
     text-align: center;
 }
 
-.company {
-    font-size: 55%;
-}
-
 @media (min-width: 568px) {
     .title {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        font-size: 3vw;
     }
 
-    .company {
-        font-size: 100%;
-    }
-
-    .resume {
+    .title .name, .title .company {
+        padding: .5em;
+        font-size: 5vw;
     }
 }
 
-.resume {
+.portfolio {
     margin: 0;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     font-family: sans-serif;
-    line-height: normal;
     overflow: hidden;
 }
 
@@ -53,7 +50,7 @@
     margin-top: 1rem;
     padding: 4px;
     font-size: 11px;
-    color: #555;
+    color: #567;
 }
 
 .heading {

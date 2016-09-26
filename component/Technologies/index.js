@@ -47,7 +47,7 @@ const icons =  {
     twilio: Tech('Twilio', require('../../images/twilio.svg'), 'https://www.twilio.com/'),
     graphql: Tech('GraphQL', require('../../images/graphql.svg'), 'http://graphql.org/'),
     relay: Tech('Relay', require('../../images/relay.svg'), 'https://facebook.github.io/relay/'),
-    linux: Tech('Linux', require('../../images/tux.svg'), 'https://en.wikipedia.org/wiki/Linux'),
+    linux: Tech('Linux', require('../../images/linux.svg'), 'https://en.wikipedia.org/wiki/Linux'),
     letsencrypt: Tech(`Let's Encrypt`, require('../../images/letsencrypt.svg'), 'https://letsencrypt.org/'),
 };
 

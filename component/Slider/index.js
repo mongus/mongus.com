@@ -135,7 +135,7 @@ export default class Slider extends Component {
                  onTouchCancel={this.handleTouchEnd}
             >
                 <Link to={previous || null}
-                      style={{left: transition || !previous ? -30 : 2}}
+                      style={{left: transition || !previous ? '-8vw' : '.5vw'}}
                       className={[styles.arrow, styles.left].join(' ')}
                 >
                     <svg viewBox="0 0 3 6" className={styles.arrowSvg}>
@@ -147,7 +147,7 @@ export default class Slider extends Component {
                     {last && <div className="remove" style={{top:last.top}}>{last.children}</div>}
                 </div>
                 <Link to={next || null}
-                      style={{right: transition || !next ? -30 : 2}}
+                      style={{right: transition || !next ? '-8vw' : '.5vw'}}
                       className={[styles.arrow, styles.right].join(' ')}
                 >
                     <svg viewBox="0 0 3 6" className={styles.arrowSvg}>
