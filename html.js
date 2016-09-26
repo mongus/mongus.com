@@ -22,6 +22,8 @@ module.exports = React.createClass({
       css = <style dangerouslySetInnerHTML={{ __html: require('!raw!./public/styles.css') }} />
     }
 
+    const customTypography = false;
+
     return (
       <html lang="en">
         <head>
@@ -33,8 +35,8 @@ module.exports = React.createClass({
           />
           {head.title.toComponent()}
           {head.meta.toComponent()}
-          <TypographyStyle typography={typography} />
-          <GoogleFont typography={typography} />
+          {customTypography && <TypographyStyle typography={typography} />}
+          {customTypography && <GoogleFont typography={typography} />}
           {css}
         </head>
         <body>

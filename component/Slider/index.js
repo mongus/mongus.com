@@ -44,8 +44,8 @@ export default class Slider extends Component {
             path: this.props.route.path,
             time: Date.now(),
             children: this.props.children,
-            top: this.refs.slide.offsetTop - window.scrollY
-        }
+            top: this.refs.slideContent.firstChild.offsetTop - window.scrollY
+        };
     }
 
     previousSlide() {
@@ -139,11 +139,11 @@ export default class Slider extends Component {
                       className={[styles.arrow, styles.left].join(' ')}
                 >
                     <svg viewBox="0 0 3 6" className={styles.arrowSvg}>
-                        <path d="M3,2 L2,2 L2,0 L0,3 L2,6 L2,4 L3,4 Z"/>
+                        <path d="M3,2 L2,2 L2,0 L0,3 L2,6 L2,4 L3,4 Z" className="arrow"/>
                     </svg>
                 </Link>
-                <div className={styles.slide} ref="slide">
-                    {this.props.children}
+                <div className={styles.slide}>
+                    <div className={styles.slideContent} ref="slideContent">{this.props.children}</div>
                     {last && <div className="remove" style={{top:last.top}}>{last.children}</div>}
                 </div>
                 <Link to={next || null}
@@ -151,7 +151,7 @@ export default class Slider extends Component {
                       className={[styles.arrow, styles.right].join(' ')}
                 >
                     <svg viewBox="0 0 3 6" className={styles.arrowSvg}>
-                        <path d="M0,2 L1,2 L1,0 L3,3 L1,6 L1,4 L0,4 Z"/>
+                        <path d="M0,2 L1,2 L1,0 L3,3 L1,6 L1,4 L0,4 Z" className="arrow"/>
                     </svg>
                 </Link>
             </div>

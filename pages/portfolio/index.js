@@ -1,24 +1,26 @@
 import React, {Component} from 'react';
 
-import ResumePage from '../../component/ResumePage';
+import PortfolioPage from '../../component/PortfolioPage';
 import Slider from '../../component/Slider';
 import Technologies from '../../component/Technologies';
 
-import slides from '../../resume-slides';
+import slides from '../../portfolio-slides';
 
-import styles from './resume.module.css';
+import styles from './style.module.css';
 
 const technologies = Technologies('react', 'redux', 'graphql', 'relay', 'node', 'ios', 'android', 'webpack', 'aws', 'postgres', 'mysql', 'redis', 'svg', 'stripe', 'twilio',
     'letsencrypt', 'linux');
 
 export default props => (
-    <ResumePage>
+    <PortfolioPage>
         <Slider slides={slides} route={props.route}>
             <div className={styles.content}>
                 <p>
-                    Hi! My name is Aaron Porter. I'm a software engineer specializing in full stack web and
-                    mobile development. I've been running my consulting company, Mongus Solutions, since 2005
-                    but I was developing for the web long before I started my own company.
+                    My goal is to help you define your next web or mobile app project. I will meet with you
+                    in person to determine your direction and provide sound technical recommendations. I can
+                    also provide development services if you're interested but your initial direction is more
+                    important than implementation details. I've advised too many clients who have wasted
+                    fortunes on app development that didn't fit their needs.
                 </p>
                 <p>
                     I'm very passionate about the latest advances in web technologies. As a result my
@@ -27,10 +29,10 @@ export default props => (
                     critical in today's competitive global market.
                 </p>
                 <p>
-                    Technologies I currently recommend and implement include:
+                    Technologies I often recommend and implement include:
                 </p>
                 {technologies}
             </div>
         </Slider>
-    </ResumePage>
+    </PortfolioPage>
 );

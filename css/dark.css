@@ -1,8 +1,14 @@
 body {
+    margin: 0;
+    padding: 0;
     color: #000;
     background: #171717;
 }
 
 .glow {
     text-shadow: 0 0 .5em #8ef;
+}
+
+.arrow {
+    fill: #355c63;
 }

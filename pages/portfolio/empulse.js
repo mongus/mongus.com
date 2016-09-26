@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 
-import ResumePage, {ProjectHeading} from '../../component/ResumePage';
+import PortfolioPage, {ProjectHeading} from '../../component/PortfolioPage';
 import Slider from '../../component/Slider';
 import Technologies from '../../component/Technologies';
 
-import slides from '../../resume-slides';
+import slides from '../../portfolio-slides';
 
-import styles from './resume.module.css';
+import styles from './style.module.css';
 
 const data = {
     name: 'Empulse',
@@ -32,7 +32,7 @@ const data = {
 };
 
 export default props => (
-    <ResumePage>
+    <PortfolioPage>
         <Slider slides={slides} route={props.route}>
             <div className={styles.content}>
                 <ProjectHeading data={data}/>
@@ -40,5 +40,5 @@ export default props => (
                 {data.technologies}
             </div>
         </Slider>
-    </ResumePage>
+    </PortfolioPage>
 );
