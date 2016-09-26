@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import Helmet from "react-helmet"
 
+require('../css/dark.css');
 import styles from './index.module.css';
 
 export default class Index extends Component {
@@ -10,7 +11,7 @@ export default class Index extends Component {
         <Helmet
           title="Mongus Solutions"
         />
-        <h1 className={styles.title}>
+        <h1 className={`${styles.title} glow`}>
           Mongus Solutions
         </h1>
       </div>

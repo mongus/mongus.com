@@ -1,0 +1,8 @@
+body {
+    color: #000;
+    background: #171717;
+}
+
+.glow {
+    text-shadow: 0 0 .5em #8ef;
+}

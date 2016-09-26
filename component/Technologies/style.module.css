@@ -1,0 +1,44 @@
+.technologies {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.a {
+    position: relative;
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(.75, .25, .75, 1.125);
+    animation-fill-mode: forwards;
+    opacity: 0;
+    transform: translate3d(0, 75vh, 0);
+}
+
+:global(.remove) .a {
+    animation: none;
+    transform: none;
+    opacity: 1;
+}
+
+.icon {
+    margin: 2vw;
+    height: 10vw;
+    min-height: 50px;
+    max-height: 75px;
+    width: auto;
+}
+
+@keyframes appear {
+    0% {
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}

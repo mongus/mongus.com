@@ -1,0 +1,102 @@
+.arrowSvg {
+    width: 4vw;
+    max-width: 20px;
+    height: auto;
+}
+
+.arrow {
+    fill: #666;
+    position: fixed;
+    top: 50%;
+    z-index: 1;
+    transition: all .25s ease;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+}
+.left {
+    animation: wiggle-left 3s ease alternate infinite;
+}
+
+.right {
+    animation: wiggle-right 3s ease alternate infinite;
+}
+
+@keyframes wiggle-left {
+    0% {
+        transform: translate3d(0, -50%, 0);
+    }
+
+    95% {
+        transform: translate3d(0, -50%, 0);
+    }
+
+    100% {
+        transform: translate3d(-6px, -50%, 0);
+    }
+}
+
+
+@keyframes wiggle-right {
+    0% {
+        transform: translate3d(0, -50%, 0);
+    }
+
+    95% {
+        transform: translate3d(0, -50%, 0);
+    }
+
+    100% {
+        transform: translate3d(6px, -50%, 0);
+    }
+}
+
+.slide {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-width: 100vw;
+    max-width: 100vw;
+}
+
+:global .remove {
+    position: absolute;
+    top: 0;
+}
+
+.rtl .slide {
+    animation: rtl .5s ease
+}
+
+.ltr .slide {
+    animation: ltr .5s ease;
+}
+
+.rtl :global .remove {
+    left: -100vw;
+}
+
+.ltr :global .remove {
+    right: -100vw;
+}
+
+@keyframes rtl {
+    from {
+        transform: translate3d(100vw, 0, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes ltr {
+    from {
+        transform: translate3d(-100vw, 0, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
