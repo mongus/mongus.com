@@ -25,7 +25,9 @@
     "typography-plugin-code": "^0.13.0"
   },
   "devDependencies": {
-    "gh-pages": "^0.11.0"
+    "aws-sdk": "^2.6.4",
+    "gh-pages": "^0.11.0",
+    "mime-types": "^2.1.12"
   },
   "keywords": [
     "gatsby"
@@ -34,7 +36,7 @@
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
-    "deploy": "gatsby build --prefix-links && gh-pages -d public",
+    "deploy": "gatsby build && node scripts/deploy.js",
     "develop": "gatsby develop",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
