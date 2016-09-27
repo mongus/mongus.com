@@ -18,7 +18,9 @@ module.exports = React.createClass({
 
     let css;
 
-    if (process.env.NODE_ENV === 'production') {
+    const production = process.env.NODE_ENV === 'production';
+
+    if (production) {
       css = <style dangerouslySetInnerHTML={{ __html: require('!raw!./public/styles.css') }} />
     }
 
@@ -41,7 +43,7 @@ module.exports = React.createClass({
         </head>
         <body>
           <div id="react-mount" dangerouslySetInnerHTML={{ __html: this.props.body }} />
-          <script src={prefixLink(`/bundle.js?t=${BUILD_TIME}`)} />
+          <script src={prefixLink(`/bundle.js${production ? '' : 't='+BUILD_TIME}`)} />
         </body>
       </html>
     )
