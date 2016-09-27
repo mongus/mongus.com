@@ -9,7 +9,7 @@ import slides from '../../portfolio-slides';
 import styles from './style.module.css';
 
 const technologies = Technologies('react', 'redux', 'graphql', 'relay', 'node', 'ios', 'android', 'webpack', 'aws', 'postgres', 'mysql', 'redis', 'svg', 'stripe', 'twilio',
-    'letsencrypt', 'linux');
+    'letsencrypt');
 
 export default props => (
     <PortfolioPage>
